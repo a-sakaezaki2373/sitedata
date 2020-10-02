@@ -1,0 +1,5 @@
+footer.footer
+  ul.nav_ft
+    each page in pageList
+      li
+        a(href=page['fileName']+'.'+page['fileExtension']) #{page['ja']}

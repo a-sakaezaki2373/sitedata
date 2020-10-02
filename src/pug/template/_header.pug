@@ -1,0 +1,11 @@
+header.header
+  nav.nav
+    ul.nav_hd
+      each page in pageList
+        li
+          a(href=page['fileName']+'.'+page['fileExtension']) #{page['ja']}
+.mainimg
+  if pageList[pageNumber]['fileName'] == "index"
+    //- index のみで表示させたい内容を記述
+  else
+    //- index 以外で表示させたい内容を記述
